@@ -1,0 +1,206 @@
+
+.pricing-plan-comp{
+    position: relative;
+    width: 100%;
+    padding-block: 5rem;
+    margin-top: 4rem;
+    padding-inline: 1.78rem;
+
+}
+
+.pricing-plan-comp .comn-heading-flex h2{
+    max-width: 65rem;
+    text-align: center;
+  }
+
+  .pricing-plan-btns-flex{
+    position: relative;
+    width: 40rem;
+    height: 7rem;
+    padding: .76rem .76rem;
+    margin: 6rem auto 4rem auto;
+    background: #131412;
+    border-radius: 1.4rem;
+    border: .15rem solid #1f250e;
+
+
+  }
+
+  .pricing-btn{
+    position: relative;
+    width: 20rem;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+
+  }
+
+  .bg-color{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: .45rem;
+    width: 20rem;
+    height: 86%;
+    background-color: var(--primary_Color);
+    border-radius: 1.4rem;
+    transition: 400ms ease;
+  }
+
+  .pricing-plan-btns-flex.planActive .bg-color{
+    transform: translateX(94.76%) translateY(-50%);
+  }
+
+  .pricing-plan-grid{
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 8rem;
+  }
+  
+  .pricing-plan-bx{
+    position: relative;
+    width: 100%;
+    background: #131412;
+    padding-block: 4rem;
+    border-radius: 1rem;
+    padding-inline: 3.76rem;
+    overflow: hidden;
+  
+
+  }
+
+  .plan-type-bx{
+    margin:  0 0;
+  }
+
+  .plan-type-bx span{
+    letter-spacing: 1.2px;
+    font-size: 1.2rem;
+  }
+
+  .pricing-plan-bx h3{
+    position: relative;
+    text-align: center;
+    width: max-content;
+    color: var(--primary_Color);
+    font-size: 5.4rem;
+    font-weight: 700;
+    padding: 0 .65rem;
+    margin-top: 2rem;
+  }
+
+  .pricing-plan-bx h3 span:first-child{
+    font-size: 4.45rem;
+    font-weight: 600;
+  }
+
+  .pricing-plan-bx h3 span:last-child{
+    position: absolute;
+    bottom: 1rem;
+    right: -3rem;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: .5px;
+  }
+
+  
+  .pricing-plan-bx p{
+    margin-top: .2rem;
+    letter-spacing: .78px;
+    font-size: 1.45rem;
+    /* text-align: center; */
+  }
+
+  .plan-features-lists{
+    position: relative;
+    margin-top: 3rem;
+    align-items: flex-start;
+    margin-inline: auto;
+    flex-direction: column;
+  }
+
+  .plan-features-lists li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: .6px;
+    padding-block: .4rem;
+   }
+
+   .plan-features-lists li ion-icon{
+    color: var(--primary_Color);
+    font-size: 2rem;
+   }
+
+   .pricing-plan-bx .buton{
+    margin-top: 4rem;
+    width: 100%;
+   }
+
+   .pricing-plan-bx .buton:hover{
+    background-color: var(--white_color) !important;
+    color: #070806 !important;
+    box-shadow: #e5e5e574 0px 2px 26px 4px;
+  }
+
+  .pricing-plan-bx:nth-child(2) .buton{
+    background-color: var(--primary_Color);
+    color: #070806 !important;
+    border-color: var(--primary_Color) !important;
+    font-weight: 500 ;
+
+  }
+  
+  .pricing-plan-bx:nth-child(2) .buton:hover{
+     background-color: transparent !important;
+     color:var(--primary_Color) !important;
+    box-shadow: #4961168e 0px 2px 26px 4px ;
+  
+  }
+
+  .pricing-plan-bx:nth-child(2):before{
+    content: "";
+    position: absolute;
+    top: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 7rem;
+    background: linear-gradient(90deg,rgba(160,224,13,0) 0%,rgba(160,224,13,1) 52.85966992378235%,rgba(160,224,13,0) 100%);
+    z-index: 1;
+    filter: blur(45px);
+    opacity: 0.4;
+  }
+  
+
+
+  /* ==================
+ Our mobile devices  
+============================ */
+@media all and (min-width: 320px) and (max-width: 768px){
+
+  .pricing-plan-grid{
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 50rem;
+    margin-inline: auto;
+  }
+
+  .pricing-plan-btns-flex{
+    width: 32rem;
+  }
+
+  .bg-color{
+    width: 15.87rem;
+  }
+
+}
+
+  

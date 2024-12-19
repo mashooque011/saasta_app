@@ -1,0 +1,68 @@
+
+.streamline-comp{
+    position: relative;
+    width: 100%;
+    padding-inline: 1.78rem;
+    padding-block: 4rem;
+    margin-top: 5rem;
+
+}
+
+.streamline-bx{
+    position: relative;
+    max-width: 82%;
+    margin: 0 auto;
+    background: linear-gradient(180deg,  #131412  0%, rgba(0, 0, 0, .05) 100%);
+    padding: 8rem 3rem;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    border: .15rem solid #131412;
+}
+
+.streamline-bx h2{
+    max-width: 80%;
+    margin: 0 auto 1.2rem auto;
+}
+.streamline-bx p{
+    font-size: 1.67rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.streamline-bx .buton{
+    margin: 2rem auto 0 auto;
+}
+/*  */
+
+
+
+/* ==================
+ Our mobile devices  \
+============================ */
+
+@media all and (min-width: 320px) and (max-width: 767px){
+
+    .streamline-bx{
+        max-width: 100%;
+        padding-inline: 1.87rem;
+        padding-block: 4rem;
+    }
+    
+    .streamline-bx h2{
+        text-align: center;
+        font-size: 3.87rem ;
+        line-height: 1.35  ;
+        margin-bottom: 2rem;
+    }
+
+    .streamline-comp{
+        margin-top: 2rem;
+    }
+
+    .streamline-bx p{
+        font-size: 1.8rem;
+
+    }
+    
+}

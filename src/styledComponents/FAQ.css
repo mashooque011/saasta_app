@@ -1,0 +1,111 @@
+
+
+.faq-comp{
+    position: relative;
+    width: 100%;
+    padding-block: 8rem;
+    margin-block-start: 4rem;
+    padding-inline: 1.78rem;
+
+}
+
+
+.faq-comp .comn-heading-flex h2{
+    text-align: center;
+}
+
+.faq-lists{
+    position: relative;
+    width: calc(100% - 35rem);
+    margin-inline: auto;
+    margin-top: 8rem;
+
+}
+
+.faq-bx{
+    position: relative;
+    width: 100%;
+    border: .15rem solid #393938;
+    background: #131412 ;
+    padding: 3rem 3rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    min-height: 8rem;
+}
+
+.faq-bx h6{
+    font-size: 1.67rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.faq-bx p{
+    font-size: 1.55rem;
+    letter-spacing: .5px;
+    line-height: 1.7;
+    max-width: 90%;
+    margin-top: 2rem;
+    transition: 600ms ease;
+    display: none;
+}
+
+.faq-btn{
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    font-size: 2rem;
+}
+
+.faq-bx.faqactive{
+    min-height: 100%;
+}
+
+.faq-bx.faqactive p{
+    display: block;
+}
+
+
+
+/* ==================
+ Our tabs and tablets devices  
+============================ */
+@media all and (min-width: 768px) and (max-width: 1024px){
+
+    .faq-lists{
+        position: relative;
+        width: 100%;
+        max-width: 80%;
+    
+    }
+    
+}
+
+
+/* ==================
+ Our mobile devices  
+============================ */
+@media all and (min-width: 320px) and (max-width: 767px){
+
+    .faq-lists{
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    
+    }
+    
+
+    .faq-bx h6{
+        font-size: 1.87rem;
+        max-width: 90%;
+    }
+
+    .faq-bx p{
+        font-size: 1.67rem;
+    }
+
+    .faq-btn{
+        top: 5rem;
+        font-size: 2.2rem;
+    }
+}

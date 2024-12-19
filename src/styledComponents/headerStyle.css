@@ -1,0 +1,342 @@
+
+/* ==============================================
+Our header style CSS codes starts here 
+====================================== */
+
+.header{
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-130%);
+    max-width: 130rem;
+    width: 100%;
+    border: .15rem solid #20211f;
+    background-color: #07080699;
+    backdrop-filter: blur(10px);
+    border-radius: 6rem;
+    padding-block: 1.76rem;
+    padding-inline: 1.87rem;
+    z-index: 1000;
+    transition: 600ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.header.header_visible{
+    transform: translateX(-50%) translateY(0%);
+
+}
+
+.header_flexbx{
+    position: relative;
+    width: 100%;
+
+}
+
+.nav_logo{
+    position: relative;
+    gap: .55rem;
+}
+
+.nav_logo img{
+    width: 3rem;
+    height: auto;
+}
+
+.nav_logo h5{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.navbar{
+    position: relative;
+    width: auto;
+}
+
+.nav_lists{
+    position: relative;
+    width: auto;
+    gap: 4rem;
+}
+
+.nav_li a{
+    font-weight: 300;
+    transition: 600ms ease;
+
+}
+
+.menu-bar-btn , .headr-btns-flex-mob{
+    display: none;
+}
+
+
+@media all and (min-width: 1125px) and (max-width: 1330px){
+
+    /* ---------------- Our header responsive */
+
+    .header{
+        max-width: 115rem;
+    }
+    
+}
+
+
+/* ==================
+ Our Laptop mini devices  \
+============================ */
+
+@media all and (min-width: 1025px) and (max-width: 1124px){
+
+    html{
+        font-size: 56.2%;
+    }
+
+    
+
+    /* ---------------- Our header responsive */
+
+    .header{
+        max-width: 100rem;
+    }
+    
+}
+
+/* ==================
+ Our tabs and tablets devices  \
+============================ */
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+
+    html{
+        font-size: 56%;
+    }
+
+
+    /* ---------------- Our header responsive */
+
+    .header{
+        max-width: 80rem;
+        padding-block: 2.78rem;
+        padding-inline: 3rem;
+        height: 9rem;
+        overflow: hidden;
+        transition: 600ms cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+
+    .header.header_active{
+        height: 48rem;
+        border-radius: 2rem;
+    }
+    
+    .headr-btns-flex{
+        display: none;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        margin-top: 3rem;
+    }
+
+    .nav_lists{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav_logo img{
+        width: 2.87rem;
+    }
+
+    .nav_logo h5{
+        font-size: 2.5rem;
+    }
+
+    .nav_lists li a{
+        font-size: 2rem;
+    }
+
+    .nav_lists li{
+        width: 100%;
+        text-align: center;
+        height: 6rem;
+    }
+
+    .nav_lists li a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-bar-btn{
+        position: relative;
+        width: 3.65rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        background-color: transparent;
+        border: none;
+    }
+
+    .line{
+        width: 100%;
+        height: .2rem;
+        background-color: var(--primary_Color);
+        transition: 600ms cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .line2{
+        width: 70%;
+    }
+    .line3{
+        width:85%;
+    }
+
+    .menu-bar-btn.menuactive .line:nth-child(1){
+        transform: rotate(45deg) translateY(6px);
+    }
+
+    .menu-bar-btn.menuactive .line:nth-child(2){
+        transform:  translateX(-6px);
+        opacity: 0;
+    }
+
+    .menu-bar-btn.menuactive .line:nth-child(3){
+        width: 100%;
+        transform: rotate(-45deg) translateY(-15px) translateX(9px);
+    } 
+    
+}
+
+
+/* ==================
+ Our Mobile devices devices  \
+============================ */
+
+@media all and (min-width: 320px) and (max-width: 767px){
+
+    html{
+        font-size: 56%;
+    }
+
+
+    /* ---------------- Our header responsive */
+
+    .header{
+        max-width: calc(100% - 2rem);
+        padding-block: 2.78rem;
+        padding-inline: 3rem;
+        height: 9rem;
+        overflow: hidden;
+        transition: 600ms cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+
+    .header.header_active{
+        height: 62rem;
+        border-radius: .2rem;
+    }
+    
+    .headr-btns-flex{
+        display: none;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        margin-top: 3rem;
+    }
+
+    .nav_lists{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav_logo img{
+        width: 2.87rem;
+    }
+
+    .nav_logo h5{
+        font-size: 2.5rem;
+    }
+
+    .nav_lists li a{
+        font-size: 2rem;
+    }
+
+    .nav_lists li{
+        width: 100%;
+        text-align: center;
+        height: 6rem;
+    }
+
+    .nav_lists li a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headr-btns-flex-mob{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .headr-btns-flex-mob .buton{
+        width: 100%;
+    }
+
+    .menu-bar-btn{
+        position: relative;
+        width: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .8rem;
+        background-color: transparent;
+        border: none;
+    }
+
+    .line{
+        width: 100%;
+        height: .14rem;
+        background-color: var(--primary_Color);
+        transition: 600ms cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .line2{
+        width: 70%;
+    }
+    .line3{
+        width:85%;
+    }
+
+    .menu-bar-btn.menuactive .line:nth-child(1){
+        transform: rotate(45deg) translateY(6px);
+    }
+
+    .menu-bar-btn.menuactive .line:nth-child(2){
+        transform:  translateX(-6px);
+        opacity: 0;
+    }
+
+    .menu-bar-btn.menuactive .line:nth-child(3){
+        width: 100%;
+        transform: rotate(-45deg) translateY(-11px) translateX(5px);
+    } 
+    
+}
+

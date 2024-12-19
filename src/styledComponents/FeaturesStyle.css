@@ -1,0 +1,176 @@
+
+
+.features-comp{
+    position: relative;
+    width: 100%;
+    padding-inline: 1.78rem;
+    padding-block-start: 5rem;
+    margin-top: 4rem;
+    padding-block-end: 5rem;
+}
+
+.features-grid{
+    position: relative;
+    width: 100%;
+    
+}
+
+.features-info-det{
+    position: relative;
+    align-items: flex-start ;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+
+.features-info-det .mini-title-bx{
+    margin-left: 0;
+}
+
+.features-info-det h2{
+    margin-bottom: 2rem;
+}
+
+.features-info-det p{
+    font-size: 1.76rem;
+}
+
+.disc-btn{
+    margin-top: 2rem;
+    height: 5.5rem;
+    
+}
+
+
+.disc-btn:hover{
+    background-color: transparent !important;
+    color: var(--primary_Color) ;
+  box-shadow: #4961168e 0px 2px 26px 4px;
+
+
+}
+
+.feature-img{
+    position: relative;
+    width: 94%;
+    margin-left: auto;
+    height: 46rem;
+  
+}
+
+.feature-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.45rem;
+}
+
+.features-info-det h2 span{
+    color: var(--primary_Color);
+}
+
+.features-grid2 .feature-img{
+    margin-left: 0;
+}
+
+.features-grid2 .features-info-det{
+    width: 94%;
+    margin-left: auto;
+}
+
+.features-info-det .features-lists{
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.features-lists li{
+    position: relative;
+    gap: .67rem;
+    padding-block: .35rem;
+    letter-spacing: .3px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.check-bx{
+    font-size: 1.65rem;
+    color: var(--primary_Color);
+}
+
+
+/* ==================
+ Our tabs and tablets devices  \
+============================ */
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+
+    html{
+        font-size: 56%;
+    }
+
+    .features-grid{
+        padding-inline: 1rem;
+    }
+
+    .feature-img{
+        height: 36rem;
+        margin-block: auto;
+    }
+
+  
+
+    .features-info-det h2{
+        font-size: 5rem;
+    }
+
+    .features-info-det p{
+        font-size: 1.87rem;
+    }
+
+    .features-lists li{
+        font-size: 1.55rem;
+    }
+    
+}
+
+/* ==================
+ Our Mobile devices  \
+============================ */
+
+@media all and (min-width: 320px) and (max-width: 767px){
+
+    html{
+        font-size: 56%;
+    }
+
+    .features-grid{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 7rem;
+    }
+
+    .feature-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .features-info-det , .features-grid2 .features-info-det{
+        width: 100% ;
+    }
+
+    .features-info-det h2{
+        font-size: 4rem;
+        text-align: left;
+
+    }
+
+    .features-info-det p{
+        font-size: 1.87rem;
+    }
+
+    .features-lists li{
+        font-size: 1.55rem;
+    }
+    
+}

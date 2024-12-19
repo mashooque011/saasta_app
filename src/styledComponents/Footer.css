@@ -1,0 +1,253 @@
+
+
+.footer{
+    position: relative;
+    width: 100%;
+    padding-block-start: 8rem;
+    margin-top: 4rem;
+    padding-inline: 1.78rem;
+    background-color: #080908;
+
+}
+
+.footr-flex{
+    position: relative;
+    width: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 6rem;
+    border-bottom: .15rem solid #4b4b4b;
+}
+
+.left-footer-bx{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-logo img{
+    width: 3.5rem;
+}
+
+.footer-logo h5{
+    font-size: 2.5rem;
+}
+
+.left-footer-bx > p{
+    max-width: 40rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.soc-icons-flex{
+    gap: 1rem;
+}
+
+.soc-icons-flex a{
+    position: relative;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    display: grid;
+    place-items: center;
+    background-color: #393938;
+     border-radius: 50%;
+     font-size:1.78rem;
+     transition: 600ms ease;
+
+}
+
+.soc-icons-flex a:hover{
+    color: #141514;
+    background-color: var(--primary_Color);
+}
+
+.right-footer-bx{
+    position: relative;
+    width: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16rem;
+    margin-top: 1rem;
+}
+
+.footer-bx {
+    position: relative;
+    width: auto;
+}
+
+.foter-lists {
+    position: relative;
+    margin-top: 2rem;
+}
+.footer-bx h5{
+    font-size: 2rem;
+}
+
+.foter-lists li{
+    position: relative;
+    padding-block: .4rem;
+}
+
+.foter-lists li > a , 
+.foter-lists li > span{
+    font-size: 1.56rem;
+    transition: 600ms ease;
+    color: #fff;
+}
+
+.foter-lists li:hover > a{
+    color: var(--primary_Color);
+}
+
+.copyright-flex-bx{
+    position: relative;
+    width: 100%;
+    padding-block: 2rem;
+    padding-block-end: 4rem;
+}
+
+.copyright-flex-bx p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.terms-policy-flex{
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.terms-policy-flex a{
+    font-size: 1.4rem;
+    transition: 600ms ease;
+}
+
+.terms-policy-flex a:hover{
+    color: var(--primary_Color);
+}
+
+
+
+/* ==================
+ Our tabs and tablets devices  \
+============================ */
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+
+  .footr-flex{
+    gap: 8rem;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .copyright-flex-bx{
+    max-width: 70rem;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .left-footer-bx , .right-footer-bx{
+    width: 100%;
+    justify-content: space-between;
+
+  }
+
+  .footer-logo img{
+    width: 4rem;
+  }
+
+  .footer-logo h5{
+    font-size: 2.87rem;
+  }
+
+  .left-footer-bx p , .copyright-flex-bx p{
+    font-size: 1.87rem;
+  }
+
+  .soc-icons-flex a{
+    font-size: 2rem;
+  }
+
+  .footer-bx h5{
+    font-size: 2.45rem;
+  }
+
+  .foter-lists li a ,
+  .foter-lists li span{
+    font-size: 1.76rem;
+  }
+
+  .terms-policy-flex a{
+    font-size: 1.6rem;
+  }
+    
+}
+
+/* ==================
+ Our Mobile devices  \
+============================ */
+
+@media all and (min-width: 320px) and (max-width: 767px){
+
+    .footr-flex{
+        gap: 8rem;
+        max-width: 70rem;
+        margin: 0 auto;
+      }
+    
+      .copyright-flex-bx{
+        max-width: 70rem;
+        margin: 0 auto;
+        flex-direction: column;
+      }
+    
+      .left-footer-bx , .right-footer-bx{
+        width: 100%;
+        justify-content: space-between;
+    
+      }
+    
+      .footer-logo img{
+        width: 4rem;
+      }
+    
+      .footer-logo h5{
+        font-size: 2.87rem;
+      }
+    
+      .left-footer-bx p , .copyright-flex-bx p{
+        font-size: 1.87rem;
+      }
+      .copyright-flex-bx p{
+        text-align: center;
+      }
+    
+      .soc-icons-flex a{
+        font-size: 2rem;
+      }
+    
+      .footer-bx h5{
+        font-size: 2.2rem;
+      }
+    
+      .foter-lists li a ,
+      .foter-lists li span{
+        font-size: 1.65rem;
+      }
+
+      
+      .terms-policy-flex{
+        justify-content: center;
+      }
+    
+      .terms-policy-flex a{
+        font-size: 1.5rem;
+      }
+
+      .right-footer-bx{
+        gap: 2rem;
+      }
+
+}

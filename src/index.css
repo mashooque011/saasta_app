@@ -1,0 +1,355 @@
+/* ===========================
+Our Inter font import from Google fonts 
+======================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ===========================
+Our CSS Reusable Codes  
+======================================= */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+:root{
+  --primary_Color : #a0e00d;
+  --text_color_one : #c6c7c6;
+  --text_color_two : #cccccc;
+  --text_color_three : #c5c6c5;
+  --white_color : #fff;
+}
+
+html{
+  font-size: 62.5% ;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #070806;
+  color:  var(--white_color) ;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 0;
+line-height: normal;
+color: var(--white_color);
+}
+
+h1{
+font-size: 7rem;
+font-weight: 500;
+}
+
+h2{
+  font-size:5.78rem;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+h4{
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+h5{
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h6{
+  font-size: 1.4rem;
+  font-weight: 500;
+
+}
+
+p{
+  font-size: 1.65rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text_color_one);
+}
+
+a{
+  font-size: 1.55rem;
+  font-weight: 400;
+  color: var(--white_color);
+  text-decoration: none;
+}
+
+li{
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  list-style: none;
+  color: var(--text_color_three);
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.item-center{
+  align-items: center;
+  justify-content: center;
+}
+
+.item-between{
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gap{
+  gap: 2rem;
+}
+
+.grid-gap{
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+
+.grid-two-col{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-col{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.text-center{
+  text-align: center;
+}
+
+.common-container{
+  max-width: 115rem;
+  margin: 0 auto;
+}
+
+.common-container2{
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+/* ========================================
+Our Reusable CSS codes ends here
+================================ */
+
+
+.nav_li a:hover , .nav_li.active a{
+  color: var(--primary_Color);
+}
+
+/* =============================
+ our Common button css code
+ ====================== */
+
+.buton{
+  position: relative;
+  width: max-content;
+  height: 4.76rem;
+  padding-inline: 2.4rem;
+  border-radius: 5rem;
+  transition: 600ms cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  border: .15rem solid transparent;
+  font-weight: 400;
+}
+
+.headr-btns-flex .buton:nth-child(1):hover{
+  background-color: var(--white_color) !important;
+  color: #070806 !important;
+  box-shadow: #e5e5e574 0px 2px 26px 4px;
+}
+
+.headr-btns-flex .buton:nth-child(2):hover{
+   background-color: transparent !important;
+   color:var(--primary_Color) !important;
+  box-shadow: #4961168e 0px 2px 26px 4px;
+
+}
+
+.mini-title-bx span{
+  color: var(--primary_Color);
+}
+
+.tick-bx span{
+  font-size: 1.4rem;
+  color: var(--text_color_two);
+}
+
+
+/* ===========================================
+Our Common Minititle CSS codes
+======================= */
+
+
+
+.mini-title-bx{
+  position: relative;
+  width: max-content;
+  padding-inline: 1rem;
+  border-radius: 5rem;
+  border: .15rem solid rgb(31, 37, 14);
+  background: #131412;
+  gap: .65rem;
+  padding-block: .76rem;
+  /* margin-bottom: 1.78rem; */
+  margin: 0 auto 1.78rem auto;
+}
+
+.mini-title-bx span{
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.star-icon{
+  position: relative;
+  width: 1.67rem;
+  height: 1.67rem;
+  background-color: rgb(31, 37, 14);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.star-icon ion-icon{
+  color: var(--primary_Color);
+  font-size: .9rem;
+}
+
+/* ================================
+Our Company Logo slider comp 
+==================== */
+
+.company-logo-slider-comp{
+  position: relative;
+  width: 100%;
+  margin-top: 5rem;
+  padding-block-start: 5rem;
+  padding-block-end: 5rem;
+  padding-inline: 1.78rem;
+
+}
+
+
+.logo-slider{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.logo-slider:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background:linear-gradient(90deg , #070806cf , #090909cf) ;
+  filter: blur(30px);
+  z-index: 6;
+
+}
+
+.logo-slider:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 100%;
+  background:linear-gradient(90deg , #070806b7 , #090909bf) ;
+  filter: blur(30px);
+  z-index: 6;
+
+}
+
+.slider-track{
+  position: relative;
+  display: flex;
+  width: calc(200%);
+  white-space: nowrap;
+}
+
+
+.slider-item{
+  position: relative;
+  flex: 0 0 auto;
+  width: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 4rem;
+  border-right: .35rem solid #20211f;
+}
+
+.slider-item:nth-child(3) ,
+
+.slider-item:nth-child(8) ,
+.slider-item:nth-child(13){
+  width: 23rem;
+}
+.slider-item:nth-child(4),
+.slider-item:nth-child(9) ,
+.slider-item:nth-child(14) {
+  width: 25rem;
+}
+.slider-item:nth-child(5) ,
+.slider-item:nth-child(10),
+.slider-item:nth-child(15)
+{
+  width: 30rem;
+}
+.slider-item:nth-child(3) img ,
+.slider-item:nth-child(8) img ,
+.slider-item:nth-child(13) img{
+  filter: invert(100%);
+
+}
+
+.slider-item img{
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+
+
+@media all and (min-width: 320px) and (max-width : 768px){
+   h2{
+    text-align: center ;
+    font-size: 5rem;
+  }
+}
+
+/* our custom selection colors */
+
+::selection{
+  background-color: var(--primary_Color);
+  color:#070806;
+}
+
+
+
+

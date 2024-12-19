@@ -1,0 +1,127 @@
+
+.testim-comp{
+    position: relative;
+    width: 100%;
+    padding-block: 8rem;
+    margin-top: 4rem;
+    padding-inline: 1.78rem;
+
+}
+
+.testim-main-slider{
+    position: relative;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3rem;
+    margin-top: 10rem;
+    overflow: hidden;
+}
+
+.testim-bx{
+    position: relative;
+    min-width: 38rem;
+    border: .15rem solid #1f250e;
+    background: #13141266 ;
+    border-radius: 1rem;
+    padding: 2.5rem 1.87rem;
+
+
+}
+
+.testim-bx p{
+    font-size: 1.7rem;
+}
+
+.user-bx{
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+    gap: 1.5rem;
+}
+
+.user-img{
+    position: relative;
+    width: 5.5rem;
+    height: 5.5rem;
+    
+}
+
+.user-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.user-bx h6{
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+}
+
+.user-bx span{
+    font-size: 1.4rem;
+    color: var(--text_color_three);
+}
+
+
+.testim-slider-track{
+    position: relative;
+    width: 100%;
+}
+
+.testim-slider-track:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 12%;
+    height: 100%;
+    background: linear-gradient(90deg , #070806dd , #0c0d0a29);
+    z-index: 10;
+}
+
+.testim-slider-track:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 12%;
+    height: 100%;
+    background: linear-gradient(270deg , #070806dd , #0c0d0a29);
+    z-index: 10;
+}
+
+.testim-slider-track2 .testim-main-slider{
+    margin-top: 8rem;
+}
+
+
+
+
+/* ==================
+ Our mobile devices  \
+============================ */
+
+@media all and (min-width: 320px) and (max-width: 767px){
+
+    .testim-bx{
+        min-width: 34rem;
+    }
+
+    .testim-slider-track2 .testim-main-slider{
+        margin-top: 6rem;
+    }
+    
+}
+
+/* testim-bx */
