@@ -1,8 +1,38 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { motion } from "framer-motion";
 import { compLogo } from '../jsonData';
 
-const LogosSlider = () => {
+const LogosSlider = ({speed = 1.5}) => {
+
+  const containerRef = useRef(null);
+  
+    useEffect(() => {
+      const container = containerRef.current;
+  
+      let start = 0;
+  
+      const smoothScroll = () => {
+        if (!container) return;
+  
+        start += speed; // Increment the scroll position
+        if (start >= container.scrollWidth / 2) {
+          // Reset scroll position for seamless looping
+          start = 0;
+        }
+        container.scrollLeft = start;
+  
+        requestAnimationFrame(smoothScroll);
+      };
+  
+      requestAnimationFrame(smoothScroll);
+  
+      return () => cancelAnimationFrame(smoothScroll); // Cleanup on unmount
+    }, [speed]);
+    
+  
+  
+  
+  
   return (
     <>
 
@@ -10,22 +40,18 @@ const LogosSlider = () => {
         <div className="common-container">
 
             <div className="logo-slider">
-            <motion.div
+            <div
        className="slider-track"
-       animate={{ x: ["0%", "-100%"] }}
-       transition={{
-         duration: 20, // Adjust for speed
-         ease: "linear",
-         repeat: Infinity,
-       }}
+       ref={containerRef}
+    
       >
-          {[...compLogo, ...compLogo , ...compLogo].map((logo, index) => (
+          {[...compLogo, ...compLogo ].map((logo, index) => (
           <div className="slider-item" key={index}>
             <img src={logo} alt={`Company Logo ${index + 1}`} />
           </div>
         ))}
         
-        </motion.div>
+        </div>
             </div>
             
         </div>

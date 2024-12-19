@@ -288,8 +288,9 @@ Our Company Logo slider comp
 .slider-track{
   position: relative;
   display: flex;
-  width: calc(200%);
-  white-space: nowrap;
+  /* width: calc(200%); */
+  overflow: hidden;
+  /* white-space: nowrap; */
 }
 
 
@@ -350,6 +351,13 @@ Our Company Logo slider comp
   color:#070806;
 }
 
+::-webkit-scrollbar{
+  width: .345rem;
+  background-color: transparent;
+}
 
+::-webkit-scrollbar-thumb{
+  background-color: var(--primary_Color);
+}
 
 
